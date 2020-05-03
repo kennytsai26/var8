@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicapp.demo" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.example.musicapp.demo.main"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.musicapp.demo.MusicChangeActivity"
+            android:label="MusicChangeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name="com.example.musicapp.demo.Guitar"
+            android:label="Guitar"
+            />
+        <activity
+            android:name="com.example.musicapp.demo.Drum"
+            android:label="Drum"
+            />
+        <activity
+            android:name="com.example.musicapp.demo.Piano"
+            android:label="Piano"
+            />
+        <activity
+            android:name="com.example.musicapp.demo.Electropop"
+            android:label="Electropop"
+            />
+        <activity
+            android:name="com.example.musicapp.demo.Vocal"
+            android:label="Vocal"
+            />
+
+        <service android:name="com.example.musicapp.demo.run_service" />
+
+
+    </application>
+
+</manifest>

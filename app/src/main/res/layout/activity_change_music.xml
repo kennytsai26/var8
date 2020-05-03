@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+
+	   <android.support.v4.view.ViewPager
+		android:id="@+id/pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<FrameLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="298dip"
+
+		 >
+		<ImageView
+		    android:layout_width="fill_parent"
+		   android:layout_height="match_parent"
+		    android:scaleType="centerCrop"
+			android:paddingBottom="420dp"
+			android:src="@drawable/star_sky"
+		    />
+	    
+		<com.example.musicapp.demo.PagerSlidingTabStrip
+			android:id="@+id/tabs"
+			android:layout_width="match_parent"
+			android:layout_height="43dip"
+			android:layout_gravity="bottom"
+			android:background="#00000000" />
+	</FrameLayout>
+
+
+
+	<com.example.musicapp.demo.CircleButton
+		android:id="@+id/button2"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="bottom"
+		android:layout_width="fill_parent"
+		android:layout_height="75dp"
+		android:src="@drawable/ic_action_tick"
+		android:gravity="center"
+		app:cb_color="#FF4444" />
+</FrameLayout>

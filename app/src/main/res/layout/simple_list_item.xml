@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability= "blocksDescendants">
+
+    <LinearLayout android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout1"
+        android:weightSum="1"
+        android:background="@drawable/list_edge">
+        <ImageButton
+            android:id="@+id/img_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity ="center"
+            android:layout_weight="0.1"
+            android:background="#00000000"
+            android:src="@drawable/picture_play"
+            android:focusable = "false">
+
+        </ImageButton>
+        <TextView android:text="TextView"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:attr/textAppearanceLarge">
+        </TextView>
+
+        <TextView android:text="TextView"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/img_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity ="center"
+            android:background="#00000000"
+            android:layout_weight="0.1"
+            android:src="@drawable/picture_add"
+            android:focusable = "false"></ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>
